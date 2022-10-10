@@ -16,7 +16,8 @@
   position: absolute;
   top: 0%;
   left: 30%;
-  width: 70%;
+  width: auto;
+  margin-right: 0vh;
   overflow-x: hidden;
 }
 
@@ -76,14 +77,24 @@
 .description{
   background-color: yellow;
   position: relative;
-  width: auto;
+ /* width: auto; */
+  min-width: 0vh;
+  max-width: 50vh;
   height: auto;
   left: 5vh;
-  justify-content: center;
+  /*justify-content: center;*/
   font-family: Arial;
   font-size: 2.25vh;
   text-align: left;
-  padding: 2vh;
+  margin-top: auto;
+  margin-right: 4vh;
+  margin-bottom: auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex-shrink: 1;
+  flex-flow: row wrap;
+  flex-basis: auto;
+  padding: 4vh;
 }
 .heading{
   background-color: none;
