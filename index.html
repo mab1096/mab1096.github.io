@@ -12,12 +12,13 @@
   display: flex;
   flex-flow: row wrap;
   flex-basis: auto;
-  flex-shrink: auto;
+  flex-shrink: 1;
   position: absolute;
   top: 0%;
   left: 30%;
   width: auto;
   margin-right: 0vh;
+  margin-left: 0vh;
   overflow-x: hidden;
 }
 
@@ -31,6 +32,7 @@
   border-bottom: none;
   display: flex;
   flex-direction: row-reversed;
+  flex-shrink: 1;
   align-items: center;
   justify-content: center-left;
 }
@@ -40,6 +42,7 @@
   border-top: solid;
   border-right: solid;
   flex-direction: row-reversed;
+  flex-shrink: 1;
   align-items: center;
   justify-content: center-left;
 }
@@ -63,12 +66,14 @@
   left: 40vh; */
   margin-left: 2vh;
   font-size: 3vh;
+  flex-shrink: 1;
   justify-content: center;
 }
 .photo{
   background-color: navy;
   width: auto;
   height: auto;
+  flex-shrink: 1;
   margin-left: 2vh;
   margin-top: 1vh;
   margin-bottom: 1vh;
@@ -103,6 +108,7 @@
   border-bottom: none;
   font-family: Arial;
   font-size: 4.5vh;
+  flex-shrink: 1;
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 2vh;
