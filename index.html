@@ -6,13 +6,28 @@
 <link rel=“stylesheet” type=“text/css” href=“styles.css”>
 <meta name="viewport" content="width= device-width, initial-scale=1">
 </head>
+  <style>
+.wrapper1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20vh;
+  background-color: yellow;
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+* {
+  box-sizing: border-box;
+}
 
-<style>
+
 .wrapper{
   display: flex;
   flex-flow: row wrap;
   flex-basis: auto;
-  flex-shrink: 1;
+  flex-shrink: auto;
   position: absolute;
   top: 0%;
   left: 30%;
@@ -32,7 +47,6 @@
   border-bottom: none;
   display: flex;
   flex-direction: row-reversed;
-  flex-shrink: 1;
   align-items: center;
   justify-content: center-left;
 }
@@ -42,7 +56,6 @@
   border-top: solid;
   border-right: solid;
   flex-direction: row-reversed;
-  flex-shrink: 1;
   align-items: center;
   justify-content: center-left;
 }
@@ -66,14 +79,12 @@
   left: 40vh; */
   margin-left: 2vh;
   font-size: 3vh;
-  flex-shrink: 1;
   justify-content: center;
 }
 .photo{
   background-color: navy;
   width: auto;
   height: auto;
-  flex-shrink: 1;
   margin-left: 2vh;
   margin-top: 1vh;
   margin-bottom: 1vh;
@@ -108,7 +119,6 @@
   border-bottom: none;
   font-family: Arial;
   font-size: 4.5vh;
-  flex-shrink: 1;
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 2vh;
@@ -122,32 +132,7 @@
   text-decoration: underline 0.25vh;
   text-underline-offset: 1vh;
 }
-.sidenav{
-  background-color: dodgerblue;
-  border: black 0.5vh solid;
-  border-top: none;
-  width: 30%;
-  height: 100%;
-  position: fixed;
-  z-index:1;
-  left: 0;
-  top: 0;
-  font-size: 2.4vh;
-  font-family: Arial;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-.sidenav a{
-  background-color: none;
-}
-.sidenav a:hover{
-  background-color: white;
-  text-decoration: none;
-  width: auto;
-  padding: 6px 8px 6px 16px;
-  display: block;
-}
+
 .profile{
   background-color: white;
   display: inline-block;
@@ -200,37 +185,14 @@ hr{
   text-underline-offset: 1vh;
 }
 </style>
-  
-  <div class = "sidenav">
-  Sidenav
-  <br>
-  <br>
+<div class="wrapper1">
   <div class = "profile"> <img src = "link.jpg" alt="Photo"></div>
-  <br>
-  <br>
-  <hr>
-  <h3> Michael A. Botelho Jr. </h3>
-  <hr>
-  <h4> Aspiring Data Researcher </h4>
-  <hr>
-  <h5> University of New Hampshire <br><br> Economics </h5>
-  <h6> Philosophy Minor <br> Spanish Minor </h6> 
-  <hr>
-  <div> Connect:
-    <br>
-    <br>
-    <a href = "#link"> Links</a>
-    <br>
-    <br>
-    <a href = "#link"> Links</a>
-    <br>
-    <br>
-    <a href = "#link"> Links</a>
-    <br>
-    <br>
-    <a href = "#link"> Links</a>
-    </div>
-    </div>
+  <h3> Michael Botelho </h3>
+  <nav class="sidebar">Links...</nav>
+  <main>Fill with lots of text</main>
+</div>
+
+  
   
   
 <div class = "wrapper">
