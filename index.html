@@ -3,53 +3,111 @@
 <head>
 <title> Title </title>
 <meta charset="utf-8">
-/* <link rel=“stylesheet” type=“text/css” href=“./style.css”> */
+<link rel=“stylesheet” type=“text/css” href=“styles.css”>
 <meta name="viewport" content="width= device-width, initial-scale=1">
 </head>
-
 <style>
- html{
+ .wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: auto;
+  flex-shrink: auto;
+  position: absolute;
+  top: 0%;
+  left: 30%;
+  width: 70%;
   overflow-x: hidden;
 }
-.header{
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+.project1{
   background-color: none;
-  position: absolute;
-  left: 55.34%;
-  top: 5%;
+  border: solid;
+  border-bottom: none;
+  display: flex;
+  flex-direction: row-reversed;
+  align-items: center;
+  justify-content: center-left;
+}
+.project2{
+  background-color: aquamarine;
+  display: flex;
+  border-top: solid;
+  border-right: solid;
+  flex-direction: row-reversed;
+  align-items: center;
+  justify-content: center-left;
+}
+
+.project1 a:hover{
+  background: yellow;
+  color: blue;
+  width: auto;
+  height: auto;
+  left: auto;
+  top: auto;
+  padding: 1px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.projecttitle{
+  background-color: none;
+  position: relative;
+  width: 20vh;
+  height: auto;
+  /* top: -10vh;
+  left: 40vh; */
+  margin-left: 2vh;
+  font-size: 3vh;
+  justify-content: center;
+}
+.photo{
+  background-color: navy;
+  width: 20vh;
+  height: 20vh;
+  margin-left: 2vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  padding: 2vh;
+}
+.description{
+  background-color: yellow;
+  position: relative;
+  width: 50vh;
+  height: auto;
+  left: 5vh;
+  justify-content: center;
   font-family: Arial;
-  font-size: 4vh;
+  font-size: 2.25vh;
+  text-align: left;
+  padding: 2vh;
+}
+.heading{
+  background-color: none;
+  z-index: 0;
+  border: solid;
+  border-bottom: none;
+  font-family: Arial;
+  font-size: 4.5vh;
   text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 2vh;
 }
-hr.solid1{
-  border-top: 0.5vh solid #333;
-  position: absolute;
-  left: 30%;
-  top: 20vh;
-  width: 70%;
-  height: 0.25vh;
-}
-hr.solid2{
-  border-top: 0.4vh solid #333;
-  top: -1vh;
-}
-hr.solid3{
-  border-top: 0.5vh solid #333;
-  top: 86vh;
-  position: absolute;
-  left: 30%;
-  width: 70%;
-  height: 0.25vh;
-}
-hr.solid4{
-  border-top: 0.4vh solid #333;
-  top: -2vh;
-  position: absolute;
-  width: 100%;
-  height: 0.25vh;
+.footer{
+  background-color: lightseagreen;
+  z-index: 0;
+  border: solid;
+  font-size: 2vh;
+  text-align: center;
+  text-decoration: underline 0.25vh;
+  text-underline-offset: 1vh;
 }
 .sidenav{
   background-color: dodgerblue;
   border: black 0.5vh solid;
+  border-top: none;
   width: 30%;
   height: 100%;
   position: fixed;
@@ -61,6 +119,16 @@ hr.solid4{
   margin: 0;
   padding: 0;
   text-align: center;
+}
+.sidenav a{
+  background-color: none;
+}
+.sidenav a:hover{
+  background-color: white;
+  text-decoration: none;
+  width: auto;
+  padding: 6px 8px 6px 16px;
+  display: block;
 }
 .profile{
   background-color: white;
@@ -75,120 +143,48 @@ hr.solid4{
 
 hr{
   background-color: black;
+  border: none;
   width: auto;
-  height: 1px;
+  height: 0.4vh;
   position: relative;
 }
-
-.grid{
-  display: grid;
- /* grid-template-columns: repeat(1, 1fr, 2fr);
-  grid-auto-rows: minmax(100px, auto);*/
-  /* grid-template-columns: 200px 400px; */
-  /* grid-template-columns: repeat(2, 1fr); */
- /* grid-template-columns: repeat(auto-fit, minmax(240px 2fr)); */
-  grid-template-columns: 20vh 40vh;
-  grid-auto-rows: 1fr;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-  font-size: 2vh;
-  position: absolute;
-  border: #333 1px solid;
-  left: 46.7%;
-  top: 40%;
-}
-.grid > div{
-  background: none;
-  padding: 1em;
-  border: #333 1px solid;
-}
-
-.grid > div:nth-child(odd){
-  background-color: none;
-}
-
-.featured{
-  background-color: none;
-  position: absolute;
-  left: 56%;
-  top: 23.5%;
-  font-size: 3vh;
-  font-family: Arial;
-  text-align: center;
-}
-/*
-.projectstitle{
-  background-color: blue;
-  position: absolute;
-  left: 620px;
-  top: 700px;
-  font-size: 14px;
-  font-family: Arial;
-  text-align: center;
-}*/
-.ul{
-  display: table;
-  margin: 0 auto;
-  text-align: center;
-  padding: 0px;
-}
-/*.projectslist{
-  background-color: yellow;
-  position: absolute;
-  left: 620px;
-  top: 775px;
-  font-size: 14px;
-  font-family: Arial;
-  text-align: center;
-}*/
-.subtitle2{
-  text-decoration: underline 0.3vh;
-  text-underline-offset: 1vh;
-}
-.twogrid{
-  background-color: none;
-  display: grid;
-  grid-template-columns: 20vh;
-  grid-auto-rows: minmax(20px, auto);
-  grid-rows-gap: 2px;
-  grid-columns-gap: 2px;
-  position: absolute;
-  left: 59.1%;
-  top: 95%;
-  font-size: 2vh;
-  padding: 0;
-  text-align: center;
-}
-.twogrid > div:nth-child(odd){
-  background-color: none;
-}
-.footer{
-  background-color: dodgerblue;
+.content1{
+  background: coral;
   z-index: 0;
-  position: absolute;
-  left: 30.2%;
-  width: 70%;
-  height: 40vh;
-  top: 130vh;
+  border: solid;
+  font-family: Arial;
   font-size: 2.5vh;
   text-align: center;
+  text-decoration: underline 0.5vh;
+  text-underline-offset: 1vh;
 }
-</style>
 
-
-<body>
-
-<!-- <a href = "#link"> <img src="img_la.jpg" alt="LA" style = "width:100%"></a> -->
-
- <div class = "header">
-   <h1> Portfolio </h1>
- </div>
- <hr class ="solid1">
-  <div class = "featured"> <h3> Featured Projects:
-    <hr class = "solid2">
-    </div>
+.content2{
+  background: none;
+  z-index: 0;
+  border-right: solid;
+  font-family: Arial;
+  font-size: 2.25vh;
+  padding: 4vh;
+}
+.content2 a:hover{
+  background-color: dodgerblue;
+}
+.sidenav2{
+  background: springgreen;
+  z-index: 0;
+  border: solid;
+  border-bottom: none;
+  font-size: 3.5vh;
+  font-family: Arial;
+  text-align: center;
+  text-decoration: underline 0.5vh;
+  text-underline-offset: 1vh;
+}
+ </style>
+ 
   
-<div class = "sidenav">
+  <div class = "sidenav">
   Sidenav
   <br>
   <br>
@@ -219,30 +215,30 @@ hr{
     </div>
     </div>
   
-<div class = "grid">
-  <div> <a href = "#link"> <img src="img_la.jpg" alt="LA" style = "width:100%"></a> </div>
-  <div> World </div>
-  <div> <a href = "#link"> <img src="img_la.jpg" alt="LA" style = "width:100%"></a> </div>
-  <div> World </div>
-  <div> <a href = "#link"> <img src="img_la.jpg" alt="LA" style = "width:100%"></a> </div>
-  <div> World </div>
-  <div> <a href = "#link"> <img src="img_la.jpg" alt="LA" style = "width:100%"></a> </div>
-  <div> World </div>
+  
+<div class = "wrapper">
+  <header class = "heading"> <h1> Portfolio </h1> </header>
+  <aside class = "sidenav2"> <h3> Featured Content:</h3> </aside>
+  
+  
+  <div class = "project1">
+    <a href = "#link"> <div class = "photo"><img src = "#link.jpg" alt = "LA"></div> </a>
+    <div class = "projecttitle"> Project Title: </div>
+    <div class = "description"> Description </div>
   </div>
-<hr class = "solid3">
-<div class = "twogrid">
-      
-<div class = "subtitle2"> <h3> More Projects:</h3></div>
-<div>
-  <ul class = "ul"> <br><li> <a href = "#Project">Project</a> </li> 
-    <br>
-  <li> <a href = "#Project">Project</a> </li> <br>
-    <li> <a href = "#Project">Project</a> </li>  </ul><br>
-</div>
-</div>
-<div class = "footer">
-  <hr class = "solid4">
-  Created with HTML5 & CSS by Michael Botelho 2022
-    </div>
-</body>
-  </html>
+   <div class = "project2">
+    <a href = "#link"> <div class = "photo"><img src = "#link.jpg" alt = "LA"></div> </a>
+     <div class = "projecttitle"> Project Title: </div>
+    <div class = "description"> Hola sou miguel e estou tratando aprender portuguese pero solo se como hablar en ingles y poco espanol lol </div>
+  </div>
+   <div class = "project1">
+    <a href = "#link"> <div class = "photo"><img src = "#link.jpg" alt = "LA"></div> </a>
+    <div class = "projecttitle"> Project Title: </div>
+    <div class = "description"> Description </div>
+  </div>
+   <div class = "project1">
+    <a href = "#link"> <div class = "photo"><img src = "#link.jpg" alt = "LA"></div> </a>
+    <div class = "projecttitle"> Project Title: </div>
+    <div class = "description"> Description </div>
+  </div>
+ </html>
