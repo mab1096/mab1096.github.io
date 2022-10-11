@@ -7,39 +7,18 @@
 <meta name="viewport" content="width= device-width, initial-scale=1">
 </head>
   <style>
-.wrapper1 {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 30%;
-  flex-shrink: 8;
-  flex-grow: 1;
-  font-size: 2vh;
-  background-color: yellow;
-  position: fixed;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-}
-* {
-  box-sizing: border-box;
-}
-
-
 .wrapper{
   display: flex;
   flex-flow: row wrap;
   flex-basis: auto;
-  flex-shrink: 1;
-  flex-grow: 1;
+  flex-shrink: auto;
+  flex: 1;
   position: absolute;
   top: 0%;
   left: 30%;
-  width: auto;
-  min-width: 0;
   margin-right: 0vh;
   margin-left: 0vh;
   overflow-x: hidden;
-  overflow: hidden;
 }
 
 .wrapper > * {
@@ -52,7 +31,6 @@
   border-bottom: none;
   display: flex;
   flex-direction: row-reversed;
-  flex-shrink: 1;
   align-items: center;
   justify-content: center-left;
 }
@@ -62,7 +40,6 @@
   border-top: solid;
   border-right: solid;
   flex-direction: row-reversed;
-  flex-shrink: 1;
   align-items: center;
   justify-content: center-left;
 }
@@ -85,24 +62,8 @@
   /* top: -10vh;
   left: 40vh; */
   margin-left: 2vh;
-  flex-shrink: 1;
   font-size: 3vh;
   justify-content: center;
-}
-.title{
-  font-size: 4h;
-  background: navy;
-  min-width: 0;
-  max-width: 100%;
-  flex-shrink: 1;
-  flex-flow: row wrap;
-  margin-right: 0vh;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  flex-shrink: 1;
-  flex-flow: row wrap;
-  flex-basis: auto;
-  padding: 4vh;
 }
 .photo{
   background-color: navy;
@@ -145,7 +106,6 @@
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 2vh;
-  flex-shrink: 1;
 }
 .footer{
   background-color: lightseagreen;
@@ -153,11 +113,35 @@
   border: solid;
   font-size: 2vh;
   text-align: center;
-  flex-shrink: 1;
   text-decoration: underline 0.25vh;
   text-underline-offset: 1vh;
 }
-
+.sidenav{
+  background-color: dodgerblue;
+  border: black 0.5vh solid;
+  border-top: none;
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top: 0;
+  font-size: 2.4vh;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.sidenav a{
+  background-color: none;
+}
+.sidenav a:hover{
+  background-color: white;
+  text-decoration: none;
+  width: auto;
+  padding: 6px 8px 6px 16px;
+  display: block;
+}
 .profile{
   background-color: white;
   display: inline-block;
@@ -165,7 +149,6 @@
   height: 21vh;
   border-radius: 50%;
   background-repeat: no-repeat;
-  flex-shrink: 1;
   background-size: cover;
   background-position: center center;
 }
@@ -184,7 +167,6 @@ hr{
   font-family: Arial;
   font-size: 2.5vh;
   text-align: center;
-  flex-shrink: 1;
   text-decoration: underline 0.5vh;
   text-underline-offset: 1vh;
 }
@@ -195,7 +177,6 @@ hr{
   border-right: solid;
   font-family: Arial;
   font-size: 2.25vh;
-  flex-shrink: 1;
   padding: 4vh;
 }
 .content2 a:hover{
@@ -206,7 +187,6 @@ hr{
   z-index: 0;
   border: solid;
   border-bottom: none;
-  flex-shrink: 1;
   font-size: 3.5vh;
   font-family: Arial;
   text-align: center;
