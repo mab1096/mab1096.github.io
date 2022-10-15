@@ -33,8 +33,12 @@
   flex-direction: row-reversed;
   align-items: center;
   justify-content: center-left;
+  box-shadow: 10px;
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
-.project2{
+/*.project2{
   background-color: aquamarine;
   display: flex;
   border-top: solid;
@@ -42,17 +46,18 @@
   flex-direction: row-reversed;
   align-items: center;
   justify-content: center-left;
-}
+}*/
 
 .project1 a:hover{
-  background: yellow;
-  color: blue;
-  width: auto;
+  /*background: lightseagreen;*/
+  opacity: .5;
+  /*color: blue;*/
+ /* width: auto;
   height: auto;
   left: auto;
   top: auto;
-  padding: 1px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  padding: 0px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
 }
 .projecttitle{
   background-color: none;
@@ -84,7 +89,7 @@
   /*padding: 2vh;*/
 }
 .description{
-  background-color: yellow;
+  background-color: lightskyblue;
   position: relative;
  /* width: auto; */
   min-width: 0vh;
@@ -93,7 +98,7 @@
   left: 5vh;
   /*justify-content: center;*/
   font-family: Arial;
-  font-size: 2.25vh;
+  font-size: 2.5vh;
   text-align: left;
   margin-top: auto;
   margin-right: 4vh;
@@ -149,20 +154,23 @@
   text-align: center;
 }
 .sidenav a{
-  background-color: none;
+  background-color: transparent;
+  border-bottom: solid 1px transparent;
+  color: black;
+  padding: 20px;
 }
 .sidenav a:hover{
   background-color: white;
   text-decoration: none;
   width: auto;
-  padding: 6px 8px 6px 16px;
-  display: block;
+  padding: 5px;
+  /*padding: 0px 0px 0px 0px;*/
 }
 .profile{
   background-color: white;
   display: inline-block;
-  width: 21vh;
-  height: 21vh;
+  width: 23vh;
+  height: 23vh;
   max-width:100%;
   max-height: 100%;
   /*object-fit: contain;*/
@@ -199,11 +207,12 @@ hr{
   z-index: 0;
   border-right: solid;
   font-family: Arial;
-  font-size: 2.25vh;
+  font-size: 2.5vh;
   padding: 4vh;
 }
 .content2 a:hover{
   background-color: dodgerblue;
+  padding: 2px;
 }
 .sidenav2{
   background: springgreen;
@@ -221,8 +230,6 @@ hr{
   
 <div class = "wrapper">
     <div class = "sidenav">
-  Sidenav
-  <br>
   <br>
   <div class = "profile"> <img src = "springbunnyrabbit.jpg" alt="Photo" class = "profile"></div>
   <br>
@@ -232,10 +239,10 @@ hr{
   <hr>
   <h4> Aspiring Data Researcher </h4>
   <hr>
-  <h5> University of New Hampshire <br><br> Economics </h5>
-  <h6> Philosophy Minor <br> Spanish Minor </h6> 
+  <h4> University of New Hampshire <br><br> Economics </h4>
+  <h6> (Philosophy Minor, Spanish Minor) </h6> 
   <hr>
-  <div> Connect:
+      <div> <b><u> Connect:</u> </b>
     <br>
     <br>
     <a href = "https://www.linkedin.com/in/michael-botelho-77066015b/"> LinkedIn</a>
@@ -305,11 +312,13 @@ E-mail me → mab1096unh@gmail.com for the full research paper. </div>
     <h3> More Projects </h3>
   </article>
   <article class = "content2"> Content #2
-    <ul> <li> <a href = "https://github.com/mab1096/sales_analysis"> Python Business Analytics: Sales Analysis</a> - Conducted Sales Analysis using Python, Excel, Jupyter Notebook, & Git/Github. In this project for my Python Business Analytics class, I used Python to do common sales and pricing analyses that business and data analysts commonly encounter. </li> <br>
-      <li> <a href = "https://github.com/mab1096/consulting_visuals_project">Python Business Analytics: Consulting Visuals </a> - In this project I coordinated with a group while using Python, Excel, Jupyter Notebook, and Git/Github to create visualizations through Python while making commits through Git to Github, then we worked together in our partners base repository to create each visualization we were tasked with in our partners repositories. </li> <br>
-      <li> <a href = "https://github.com/bthompson1000/user_audit"> Python Business Analytics: User Audit </a> - Utilized Python, Excel, Jupyter Notebook, Git/Github for my Python Business Analytics class to analyze data and conduct a user audit while working cohesively in a group and committing to a partners repository on Github. </li> <br>
-      <li> <a href = "https://github.com/mab1096/tableau_visualizations">Mixed Visualizations </a> - Created mixed visualizations from my Predictive Modeling class in Tableau, while also using R and Excel to clean data. I’m locked out of my Tableau account and can’t access Tableau Workbook files, so I’m posting screenshots to visualizations I already had on Github, my Tableau Public is still active → public.tableau.com/app/mab1096 </li> <br>
-      <li> <a href = "https://github.com/mab1096/business_excel">Business Excel Projects</a> - Created a variety of visualizations and utilized excel functions to set up datasets in Excel for Business Computing Essentials class. </li> <br>
+    <ul> <li> <a href = "https://github.com/mab1096/sales_analysis"> <b> Python Business Analytics: Sales Analysis </b></a><br>Conducted Sales Analysis using Python, Excel, Jupyter Notebook, & Git/Github. In this project for my Python Business Analytics class, I used Python to do common sales and pricing analyses that business and data analysts commonly encounter. </li> <br>
+      <li> <a href = "https://github.com/mab1096/consulting_visuals_project"><b>Python Business Analytics: Consulting Visuals</b> </a><br> In this project I coordinated with a group while using Python, Excel, Jupyter Notebook, and Git/Github to create visualizations through Python while making commits through Git to Github, then we worked together in our partners base repository to create each visualization we were tasked with in our partners repositories. </li> <br>
+      <li> <a href = "https://github.com/bthompson1000/user_audit"><b> Python Business Analytics: User Audit</b> </a> <br> Utilized Python, Excel, Jupyter Notebook, Git/Github for my Python Business Analytics class to analyze data and conduct a user audit while working cohesively in a group and committing to a partners repository on Github. </li> <br>
+      <li> <a href = "https://github.com/mab1096/survival_prediction_project"> <b> Survival Titanic Predictions Project </b></a><br>Used R, Excel, and Tableau to predict which individuals had the highest chance of survival through doing: exploratory data analysis, manipulating data, creating models for prediction, and creating visualizations. This project had test and training data from Kaggle and my professor had all of us in the class try to get the highest score we could. I got the highest percent accurately predicted in the class and presented to the class things that you can do to get a higher percentage accurately predicted. This project was the main semester project before the final in my Predictive Modeling class. </li> <br>
+      <li> <a href = "https://github.com/mab1096/bip-python-unh"> <b> Bip-Python-UNH Worksheets </b></a><br>These are worksheets from my Python for Business Analytics class which focused on accomplishing tasks business analysts commonly encounter, and going through essential python that is useful in analytics. </li> <br>
+      <li> <a href = "https://github.com/mab1096/tableau_visualizations"><b>Mixed Visualizations</b> </a> <br>Created mixed visualizations from my Predictive Modeling class in Tableau, while also using R and Excel to clean data. I’m locked out of my Tableau account and can’t access Tableau Workbook files, so I’m posting screenshots to visualizations I already had on Github, my Tableau Public is still active → public.tableau.com/app/mab1096 </li> <br>
+      <li> <a href = "https://github.com/mab1096/business_excel"><b>Business Excel Projects </b></a> <br> Created a variety of visualizations and utilized excel functions to set up datasets in Excel for Business Computing Essentials class. </li> <br>
       <li> <a href = "#link">Project #4 </a> - Description </li> <br>
       <li> <a href = "#link">Project #4 </a> - Description </li> <br>
       <li> <a href = "#link">Project #4 </a> - Description </li> <br>
