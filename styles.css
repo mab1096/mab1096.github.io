@@ -1,0 +1,352 @@
+body{margin:0;}
+.sidenav{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 0.5fr 0.37fr 0.37fr 1fr 2fr;
+  grid-template-areas:
+    "profile"
+    "name"
+    "career"
+    "career1"
+    "education"
+    "connect";
+  position: fixed;
+  width: 26%;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  background: dodgerblue;
+  padding-left: 0;
+  grid-gap: 0;
+}
+
+
+
+profile{
+  grid-areas: profile;
+  background: dodgerblue;
+  place-content: center;
+  border: solid;
+  border-right: none;
+  position: relative;
+}
+
+.pfp{
+  background-color: white;
+  width: 7.5vw;
+  height: 7.5vw;
+  max-height: 100%;
+  max-width:100%;
+  border-radius: 50%;
+  border: solid 0.3vh white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+name{
+  display: inline-grid;
+  grid-areas: name;
+  border-left: solid;
+  border-right: none;
+  border-bottom: solid;
+  text-align: center;
+  align-items: center;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+career{
+  display: inline-grid;
+  grid-areas: career;
+  border-left: solid;
+  border-right: none;
+  text-align: center;
+  align-items: center;
+  font-family: Helvetica;
+  font-size: 1.1vw;
+}
+
+career1{
+  display: inline-grid;
+  grid-areas: career1;
+  border-left: solid;
+  border-right: none;
+  border-bottom: solid;
+  text-align: center;
+  align-items: center;
+  font-family: Helvetica;
+  font-size: 1vw;
+}
+education{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "unilogo uniinfo";
+  grid-areas: education;
+  border-left: solid;
+  border-right: none;
+  border-bottom: solid;
+  text-align: center;
+  font-family: Times;
+  font-size: 1vw;
+}
+
+font{
+  font-size: 1.2vw;
+  font-family: arial;
+  font-weight: bold;
+}
+
+unilogo{
+  grid-area: unilogo;
+  background: navy;
+}
+uniinfo{
+  grid-area: uniinfo;
+}
+
+connect{
+  grid-areas: connect;
+  border-left: solid;
+  border-right: none;
+  border-bottom: solid;
+  text-align: center;
+  font-size: 1vw;
+}
+
+.sidenav a{
+  background-color: transparent;
+  border-bottom: solid 1px transparent;
+  color: black;
+  padding: 20px;
+}
+.sidenav a:hover{
+  background-color: white;
+  text-decoration: none;
+  width: auto;
+  padding: 5px;
+  /*padding: 0px 0px 0px 0px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SITE SETUP */
+
+.site{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr 2fr 2fr 0.5fr 4.5fr 1fr;
+  grid-template-areas:
+    "header"
+    "project"
+    "mptitle"
+    "moreprojects"
+    "footer";
+  width: 74%;
+  Height: 74%;
+  overflow: auto;
+  background: deepskyblue;
+  margin-left: 26%;
+  margin-right: 0vw;
+  margin-top: 0vw;
+  margin-bottom: 0vw;
+}
+
+header{
+  background: salmon;
+  display: inline-grid;
+  font-family: Arial;
+  font-size: 10vh;
+  border: solid;
+  font-weight: bold;
+  justify-items: center;
+  align-items: center;
+  text-decoration: underline;
+  text-underline-offset: 1vh;
+}
+featured{
+  background: lightgreen;
+  display: inline-grid;
+  font-family: Arial;
+  font-size: 4.25vh;
+  font-weight: bold;
+  justify-items: center;
+  align-items: center;
+  text-decoration: underline;
+  text-underline-offset: 1.25vh;
+  border-bottom: solid;
+  border-left: solid;
+  border-right:solid;
+}
+mptitle{
+  background: orange;
+  display: inline-grid;
+  justify-items: center;
+  align-items: center;
+  font-family: Arial;
+  border-top: none;
+  border-bottom: solid;
+  border-left: solid;
+  border-right:solid;
+}
+moreprojects{
+  background: white;
+  display: inline-grid;
+  font-family: Arial;
+  border-top: none;
+  border-bottom: solid;
+  border-left: solid;
+  border-right:solid;
+  font-size: 2vh;
+}
+b{font-size: 2.5vh;}
+
+footer{
+  background: lightseagreen;
+  display: inline-grid;
+  justify-items: center;
+  align-items: center;
+  font-family: Arial;
+  border-top: none;
+  border-bottom: solid;
+  border-left: solid;
+  border-right:solid;
+}
+
+project{
+  background: lightgreen;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "photogrid overview logo";
+  border-top: none;
+  border-bottom: solid;
+  border-left: solid;
+  border-right:solid;
+}
+
+overview{
+  background: lightblue;
+  grid-area: overview;
+  position: relative;
+  margin-top:1vh;
+  margin-bottom: 1vh;
+  margin-right: 1vh;
+}
+h2{
+  text-align: center;
+  text-decoration: underline;
+  /*background: blue;*/
+  font-family: Arial;
+  font-size: 4.3vh;
+  text-underline-offset: 1.5vh;
+}
+
+p{
+  padding-left: 2vh;
+  padding-right: 2vh;
+  font-family: Arial;
+  font-size: 3vh;
+}
+
+summary{
+  background: Yellow;
+  padding-left:2vh;
+  padding-right: 2vh;
+  font-family: Arial;
+  position: absolute;
+  border: solid;
+  bottom: 0;
+}
+
+.button{
+  background: yellow;
+  font-size: 3vh;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0/0.3);
+  position: absolute;
+  bottom: 0;
+}
+
+.modal{
+  padding: 1em;
+  font-size: 3vh;
+  max-width:50ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0/0.3);
+}
+.modal::backdrop{
+  background: linear-gradient(45deg, red, blue);
+  opacity: 0.4;
+}
+
+project a:hover{
+  color: blue;
+  box-shadow: 10px;
+  opacity: 1;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+photogrid{
+  aspect-ratio: 1/1;
+  /*width:10vw;*/
+  grid-area: photogrid;
+  background-color: deepskyblue;
+  /*width: auto;
+  height: auto;*/
+  width: 50vh;
+  max-width:100%;
+  max-height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  /*padding: 2vh;*/
+  
+}
+
+
+logo{
+  background: yellow;
+  grid-area: logo;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  margin-top:1vh;
+  margin-right: 1vh;
+  margin-bottom: 1vh;
+}
+
+.logoimg{
+  background: navy;
+  aspect-ratio: 1/1;
+  width: 5vw;
+  margin: 1vh;
+  font-size: 2vh;
+}
+/*skills{
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 2vh;
+  text-align: center;
+}*/
+
