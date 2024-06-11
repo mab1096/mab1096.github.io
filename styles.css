@@ -157,7 +157,7 @@ connect{
     "moreprojects"
     "footer";
   width: 74%;
-  Height: 100vh;
+  Height: 100%;
   overflow: auto;
   background: deepskyblue;
   margin-left: 26%;
