@@ -1,6 +1,5 @@
 body{
   margin:0;
-  height: auto;
 }
 .sidenav{
   display: grid;
@@ -158,7 +157,7 @@ connect{
     "moreprojects"
     "footer";
   width: 74%;
-  Height: 74%;
+  Height: 100vh;
   overflow: auto;
   background: deepskyblue;
   margin-left: 26%;
