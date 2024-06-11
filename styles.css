@@ -146,6 +146,8 @@ connect{
 
 /* SITE SETUP */
 
+
+/*CHANGED Height: 74% to 100% THIS WORKED */
 .site{
   display: grid;
   grid-template-columns: 1fr;
@@ -351,4 +353,5 @@ logo{
   font-size: 2vh;
   text-align: center;
 }*/
+
 
