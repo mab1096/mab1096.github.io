@@ -172,24 +172,24 @@ header{
   background: salmon;
   display: inline-grid;
   font-family: Arial;
-  font-size: 10vh;
+  font-size: 5vw;
   border: solid;
   font-weight: bold;
   justify-items: center;
   align-items: center;
   text-decoration: underline;
-  text-underline-offset: 1vh;
+  text-underline-offset: 1vw;
 }
 featured{
   background: lightgreen;
   display: inline-grid;
   font-family: Arial;
-  font-size: 4.25vh;
+  font-size: 2.5vw;
   font-weight: bold;
   justify-items: center;
   align-items: center;
   text-decoration: underline;
-  text-underline-offset: 1.25vh;
+  text-underline-offset: 1vw;
   border-bottom: solid;
   border-left: solid;
   border-right:solid;
@@ -256,15 +256,15 @@ h2{
   text-decoration: underline;
   /*background: blue;*/
   font-family: Arial;
-  font-size: 4.3vh;
-  text-underline-offset: 1.5vh;
+  font-size: 2vw;
+  text-underline-offset: 1vw;
 }
 
 p{
   padding-left: 2vh;
   padding-right: 2vh;
   font-family: Arial;
-  font-size: 3vh;
+  font-size: 1.5vw;
 }
 
 summary{
