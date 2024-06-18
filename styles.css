@@ -245,7 +245,6 @@ project{
 overview{
   background: lightblue;
   grid-area: overview;
-  position: relative;
   height: 95%;
   /*margin-top:1vh;
   margin-bottom: 1vh;
@@ -272,7 +271,6 @@ summary{
   padding-left:2vh;
   padding-right: 2vh;
   font-family: Arial;
-  position: absolute;
   border: solid;
   bottom: 0;
 }
