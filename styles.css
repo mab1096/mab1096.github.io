@@ -333,7 +333,7 @@ photogrid{
   /*padding: 2vh;*/
   
 }
-
+.photo{object-fit:contain;}
 
 logo{
   background: yellow;
