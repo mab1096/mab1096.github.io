@@ -324,10 +324,10 @@ photogrid{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
+  /*margin-left: 2vh;
+  margin-right: 2vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;*/
   /*padding: 2vh;*/
   
 }
