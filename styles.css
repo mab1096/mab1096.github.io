@@ -246,9 +246,9 @@ overview{
   background: lightblue;
   grid-area: overview;
   height: 95%;
-  /*margin-top:1vh;
-  margin-bottom: 1vh;
-  margin-right: 1vh;*/
+  margin-top:1vw;
+  margin-bottom: 1vw;
+  margin-right: 1vw;
 }
 h2{
   text-align: center;
@@ -322,10 +322,10 @@ photogrid{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  /*margin-left: 2vh;
-  margin-right: 2vh;
-  margin-top: 1vh;
-  margin-bottom: 1vh;*/
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
   /*padding: 2vh;*/
   
 }
@@ -339,9 +339,9 @@ logo{
   grid-template-rows: auto;
   justify-items: center;
   height: 95%;
-  /*margin-top:1vh;
-  margin-right: 1vh;
-  margin-bottom: 1vh;*/
+  margin-top:1vw;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
 }
 
 .logoimg{
