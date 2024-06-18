@@ -213,7 +213,7 @@ moreprojects{
   border-bottom: solid;
   border-left: solid;
   border-right:solid;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
 }
 b{font-size: 1.5vw;}
 
@@ -279,7 +279,7 @@ summary{
 
 .button{
   background: yellow;
-  font-size: 3vh;
+  font-size: 1.5vw;
   border: 0;
   box-shadow: 0 0 1em rgb(0 0 0/0.3);
   position: absolute;
@@ -297,6 +297,9 @@ summary{
   background: linear-gradient(45deg, red, blue);
   opacity: 0.4;
 }
+
+.description{font-size: 1.5vw;}
+
 
 project a:hover{
   color: blue;
