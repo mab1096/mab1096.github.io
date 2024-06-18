@@ -246,6 +246,7 @@ overview{
   background: lightblue;
   grid-area: overview;
   position: relative;
+  height: 95%;
   margin-top:1vh;
   margin-bottom: 1vh;
   margin-right: 1vh;
@@ -312,7 +313,8 @@ photogrid{
   background-color: deepskyblue;
   /*width: auto;
   height: auto;*/
-  width: 50vh;
+  width: 25vw;
+  height: 95%;
   max-width:100%;
   max-height: 100%;
   object-fit: cover;
@@ -335,6 +337,7 @@ logo{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   justify-items: center;
+  height: 95%;
   margin-top:1vh;
   margin-right: 1vh;
   margin-bottom: 1vh;
@@ -353,5 +356,4 @@ logo{
   font-size: 2vh;
   text-align: center;
 }*/
-
 
