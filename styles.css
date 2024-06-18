@@ -247,9 +247,9 @@ overview{
   grid-area: overview;
   position: relative;
   height: 95%;
-  margin-top:1vh;
+  /*margin-top:1vh;
   margin-bottom: 1vh;
-  margin-right: 1vh;
+  margin-right: 1vh;*/
 }
 h2{
   text-align: center;
@@ -341,9 +341,9 @@ logo{
   grid-template-rows: auto;
   justify-items: center;
   height: 95%;
-  margin-top:1vh;
+  /*margin-top:1vh;
   margin-right: 1vh;
-  margin-bottom: 1vh;
+  margin-bottom: 1vh;*/
 }
 
 .logoimg{
