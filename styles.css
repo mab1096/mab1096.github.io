@@ -179,6 +179,7 @@ header{
   align-items: center;
   text-decoration: underline;
   text-underline-offset: 1vw;
+  padding: 10vw;
 }
 featured{
   background: lightgreen;
