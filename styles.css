@@ -206,6 +206,7 @@ mptitle{
   border-bottom: solid;
   border-left: solid;
   border-right:solid;
+  padding: 1vw;
 }
 moreprojects{
   background: white;
@@ -216,7 +217,6 @@ moreprojects{
   border-left: solid;
   border-right:solid;
   font-size: 1.25vw;
-  padding: 1vw;
 }
 b{font-size: 1.5vw;}
 
