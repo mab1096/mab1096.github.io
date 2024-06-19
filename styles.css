@@ -104,6 +104,7 @@ font{
 }
 
 .unilogo{
+  display: grid;
   grid-area: unilogo;
   background: navy;
   object-fit: cover;
