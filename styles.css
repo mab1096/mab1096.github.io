@@ -349,22 +349,29 @@ logo{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+  gap: 0.01vw;
   justify-items: center;
   height: 95%;
   margin-top:1vw;
   margin-right: 1vw;
   margin-bottom: 1vw;
-  
 }
 
 .logoimg{
   background: navy;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  max-height: 5vw;
-  max-width: 5vw;
-  margin: 1vh;
+  width: 5vw;
+  height: 5vw;
+  margin: 0.5vw;
   font-size: 2vh;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.logoimg img{
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  display: block;
 }
 /*skills{
   text-decoration: underline;
