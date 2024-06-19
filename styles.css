@@ -253,6 +253,7 @@ project{
 overview{
   background: lightblue;
   grid-area: overview;
+  position: relative;
   height: 95%;
   margin-top:1vw;
   margin-bottom: 1vw;
@@ -288,7 +289,7 @@ summary{
   font-size: 1.5vw;
   border: 0;
   box-shadow: 0 0 1em rgb(0 0 0/0.3);
-  position: relative;
+  position: absolute;
   bottom: 0;
 }
 
