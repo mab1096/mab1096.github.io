@@ -354,12 +354,15 @@ logo{
   margin-top:1vw;
   margin-right: 1vw;
   margin-bottom: 1vw;
+  
 }
 
 .logoimg{
   background: navy;
   aspect-ratio: 1/1;
-  width: 5vw;
+  object-fit: cover;
+  max-height: 5vw;
+  max-width: 5vw;
   margin: 1vh;
   font-size: 2vh;
 }
