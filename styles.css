@@ -103,9 +103,12 @@ font{
   font-weight: bold;
 }
 
-unilogo{
+.unilogo{
   grid-area: unilogo;
   background: navy;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 uniinfo{
   grid-area: uniinfo;
