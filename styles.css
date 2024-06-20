@@ -207,11 +207,12 @@ mptitle{
   justify-items: center;
   align-items: center;
   font-family: Arial;
+  font-weight: bold;
   border-top: none;
   border-bottom: solid;
   border-left: solid;
   border-right:solid;
-  padding: 1vw;
+  padding: 1.5vw;
 }
 moreprojects{
   background: white;
@@ -235,7 +236,8 @@ footer{
   border-bottom: solid;
   border-left: solid;
   border-right:solid;
-  padding: 1vw;
+  padding: 3vw;
+  font-size: 1.1vw;
 }
 
 project{
