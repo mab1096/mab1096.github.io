@@ -155,7 +155,7 @@ connect{
 .site{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.5fr 2fr 2fr 0.5fr 4.5fr 1fr;
+  grid-template-rows: 1fr 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr 4.5fr 1fr;
   grid-template-areas:
     "header"
     "project"
@@ -265,7 +265,7 @@ h2{
   /*background: blue;*/
   font-family: Arial;
   font-size: 2vw;
-  text-underline-offset: 1vw;
+  text-underline-offset: 0.2vw;
 }
 
 p{
@@ -273,6 +273,7 @@ p{
   padding-right: 2vh;
   font-family: Arial;
   font-size: 1.5vw;
+  line-height: 2vw;
 }
 
 summary{
@@ -284,6 +285,7 @@ summary{
   bottom: 0;
 }
 
+/* ADDED POSITION ABSOLUTE TO BUTTON AND RELATIVE TO OVERVIEW, in case anything goes wrong */
 .button{
   background: yellow;
   font-size: 1.5vw;
@@ -380,4 +382,3 @@ logo{
   font-size: 2vh;
   text-align: center;
 }*/
-
