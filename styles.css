@@ -4,8 +4,7 @@ body{
 .sidenav{
   display: grid;
   grid-template-columns: 1fr;
-  /*grid-template-rows: 2fr 0.5fr 0.37fr 0.37fr 1fr 2fr;*/
-  grid-template=rows: auto;
+  grid-template-rows: 2fr 0.5fr 0.37fr 0.37fr 1fr 2fr;
   grid-template-areas:
     "profile"
     "name"
@@ -156,7 +155,8 @@ connect{
 .site{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr 4.5fr 1fr;
+  /*grid-template-rows: 1fr 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr 4.5fr 1fr;*/
+  grid-template=rows: auto;
   grid-template-areas:
     "header"
     "project"
