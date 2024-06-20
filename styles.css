@@ -184,7 +184,7 @@ header{
   align-items: center;
   text-decoration: underline;
   text-underline-offset: 1vw;
-  padding: 5vw;
+  padding: 3vw;
 }
 featured{
   background: lightgreen;
@@ -199,7 +199,7 @@ featured{
   border-bottom: solid;
   border-left: solid;
   border-right:solid;
-  padding: 2.5vw;
+  padding: 1.5vw;
 }
 mptitle{
   background: orange;
@@ -208,6 +208,7 @@ mptitle{
   align-items: center;
   font-family: Arial;
   font-weight: bold;
+  font-size: 1.5vw;
   border-top: none;
   border-bottom: solid;
   border-left: solid;
