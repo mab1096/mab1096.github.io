@@ -69,7 +69,13 @@ closeModal5.addEventListener('click', () => {
   modal5.close();
 })
 
-/* Modal #6 */
+
+
+
+
+
+/*EDUCWAGE - MOVED DOWN TO MORE PROJECTS SECTION-->
+/* Modal #6
 const modal6 = document.querySelector('#modal6');
 const openModal6 = document.querySelector('.open-button6');
 const closeModal6 = document.querySelector('.close-button6');
@@ -81,6 +87,14 @@ openModal6.addEventListener('click', () => {
 closeModal6.addEventListener('click', () => {
   modal6.close();
 })
+<!-- EDUCWAGE - MOVED DOWN TO MORE PROJECTS SECTION */
+
+
+
+
+
+
+
 
 
 /* Modal #7 */
