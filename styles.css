@@ -113,7 +113,7 @@ font{
 .unilogo{
   display: grid;
   grid-area: unilogo;
-  background: navy;
+  background: white;
   object-fit: contain;
   width: 100%;
   height: 100%;
@@ -263,7 +263,7 @@ project{
 }
 
 overview{
-  background: lightblue;
+  background: white;
   grid-area: overview;
   position: relative;
   height: 95%;
@@ -360,7 +360,7 @@ photogrid{
 }
 
 logo{
-  background: yellow;
+  background: white;
   grid-area: logo;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -375,7 +375,7 @@ logo{
 }
 
 .logoimg{
-  background: navy;
+  background: white;
   width: 5vw;
   height: 5vw;
   margin: 0.5vw;
