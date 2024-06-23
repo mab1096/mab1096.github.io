@@ -42,7 +42,7 @@ profile{
   border: solid 0.3vh white;
   position: absolute;
   left: 50%;
-  top: 70%;
+  top: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
 }
@@ -51,6 +51,7 @@ profile{
   display:block;
   width: 100%;
   height: auto;
+  top: 10%;
 }
 
 name{
