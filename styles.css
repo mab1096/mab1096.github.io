@@ -33,6 +33,7 @@ profile{
 
 .pfp{
   background-color: white;
+  display: inline-block;
   width: 9vw;
   height: 9vw;
   max-height: 100%;
