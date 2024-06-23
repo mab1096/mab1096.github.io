@@ -45,6 +45,7 @@ profile{
   top: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  clip-path: circle(50% off center);
 }
 
 .pfp img{
