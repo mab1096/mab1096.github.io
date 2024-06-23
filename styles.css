@@ -22,10 +22,6 @@ body{
   grid-gap: 0;
 }
 
-.pfp{
-  object-fit: cover;
-}
-
 profile{
   grid-areas: profile;
   background: dodgerblue;
@@ -48,6 +44,7 @@ profile{
   top: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  object-fit: contain;
 }
 
 name{
