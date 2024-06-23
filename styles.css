@@ -45,7 +45,12 @@ profile{
   top: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  object-fit: cover;
+}
+
+.pfp img{
+  display:block;
+  width: 100%;
+  height: auto;
 }
 
 name{
