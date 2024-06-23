@@ -22,7 +22,9 @@ body{
   grid-gap: 0;
 }
 
-
+.pfp{
+  object-fit: cover;
+}
 
 profile{
   grid-areas: profile;
@@ -175,7 +177,7 @@ connect{
 }
 
 header{
-  background: salmon;
+  background: dodgerblue;
   display: inline-grid;
   font-family: Arial;
   font-size: 5vw;
@@ -243,7 +245,7 @@ footer{
 }
 
 project{
-  background: lightgreen;
+  background: white;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 1fr;
