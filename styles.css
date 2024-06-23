@@ -45,7 +45,7 @@ profile{
   top: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 name{
