@@ -328,7 +328,7 @@ summary{
 .description{font-size: 1.5vw;}
 
 
-project a:hover{
+photogrid a:hover{
   color: blue;
   box-shadow: 10px;
   opacity: 1;
@@ -358,6 +358,8 @@ photogrid{
   /*padding: 2vh;*/
   
 }
+
+
 .photo{
   object-fit: cover;
   place-items: center;
