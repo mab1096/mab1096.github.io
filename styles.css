@@ -240,7 +240,7 @@ moreprojects{
   font-size: 1vw;
 }
 
-moreproject a:hover{
+moreprojects a:hover{
   background: none;
   color: navy;
   opacity: 0.5;
