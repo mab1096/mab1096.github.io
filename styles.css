@@ -311,6 +311,16 @@ summary{
   box-shadow: 0 0 1em rgb(0 0 0/0.3);
   position: absolute;
   bottom: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.button:hover{
+  opacity: 0.5;
+  box-shadow: 10px;
+  cursor: pointer;
+  background: navy;
 }
 
 .modal{
