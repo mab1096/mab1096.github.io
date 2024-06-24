@@ -269,7 +269,7 @@ project{
 }
 
 overview{
-  background: paleturquiose;
+  background: paleturquoise;
   grid-area: overview;
   position: relative;
   height: 95%;
