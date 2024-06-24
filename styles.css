@@ -321,6 +321,7 @@ summary{
   box-shadow: 10px;
   cursor: pointer;
   background: navy;
+  color: white;
 }
 
 .modal{
