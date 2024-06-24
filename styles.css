@@ -117,8 +117,14 @@ font{
   object-fit: contain;
   width: 100%;
   height: 100%;
-  place-items: center;
+  justify-content: center;
+  align-content: center;
 }
+
+.unilogo img{
+  width: 7vw;
+}
+
 uniinfo{
   grid-area: uniinfo;
 }
